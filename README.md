@@ -1,21 +1,17 @@
-# 🚀 Angular Beginner to Advanced
+# Angular — Beginner to Advanced
 
-> A complete Angular learning guide from **Beginner → Intermediate → Advanced**, including concepts, explanations, and practical code examples.
-
-**Language:** English 🇬🇧 + Khmer 🇰🇭
-**Framework:** Angular
-**Language:** TypeScript
-**Level:** Beginner → Advanced
+> A complete Angular learning guide from beginner to advanced with practical examples.
+> **English + Khmer explanations 🇬🇧 🇰🇭**
 
 ---
 
-# 📚 Table of Contents
+## 📚 Table of Contents
 
 * [1. What is Angular?](#1-what-is-angular)
-* [2. Angular vs JavaScript vs React](#2-angular-vs-javascript-vs-react)
-* [3. Prerequisites](#3-prerequisites)
-* [4. Installing Angular](#4-installing-angular)
-* [5. Creating Your First Project](#5-creating-your-first-project)
+* [2. Why Angular?](#2-why-angular)
+* [3. Requirements](#3-requirements)
+* [4. Install Angular](#4-install-angular)
+* [5. Create Your First Project](#5-create-your-first-project)
 * [6. Angular Project Structure](#6-angular-project-structure)
 * [7. Components](#7-components)
 * [8. Templates](#8-templates)
@@ -29,49 +25,48 @@
 * [16. Effects](#16-effects)
 * [17. Inputs](#17-inputs)
 * [18. Outputs](#18-outputs)
-* [19. Components Communication](#19-components-communication)
-* [20. Services](#20-services)
-* [21. Dependency Injection](#21-dependency-injection)
-* [22. Pipes](#22-pipes)
-* [23. Custom Pipes](#23-custom-pipes)
-* [24. Directives](#24-directives)
-* [25. Custom Directives](#25-custom-directives)
-* [26. Routing](#26-routing)
-* [27. Route Parameters](#27-route-parameters)
-* [28. Query Parameters](#28-query-parameters)
-* [29. Route Guards](#29-route-guards)
-* [30. Lazy Loading](#30-lazy-loading)
-* [31. Forms](#31-forms)
-* [32. Reactive Forms](#32-reactive-forms)
-* [33. Form Validation](#33-form-validation)
-* [34. HTTP Client](#34-http-client)
-* [35. CRUD API](#35-crud-api)
-* [36. HTTP Interceptors](#36-http-interceptors)
-* [37. RxJS](#37-rxjs)
-* [38. Observable](#38-observable)
-* [39. RxJS Operators](#39-rxjs-operators)
-* [40. Error Handling](#40-error-handling)
-* [41. Loading State](#41-loading-state)
-* [42. Authentication](#42-authentication)
-* [43. JWT Authentication](#43-jwt-authentication)
-* [44. State Management](#44-state-management)
-* [45. Signal Store Pattern](#45-signal-store-pattern)
+* [19. Services](#19-services)
+* [20. Dependency Injection](#20-dependency-injection)
+* [21. Routing](#21-routing)
+* [22. Route Parameters](#22-route-parameters)
+* [23. Query Parameters](#23-query-parameters)
+* [24. Route Guards](#24-route-guards)
+* [25. Lazy Loading](#25-lazy-loading)
+* [26. Forms](#26-forms)
+* [27. Reactive Forms](#27-reactive-forms)
+* [28. Form Validation](#28-form-validation)
+* [29. HttpClient](#29-httpclient)
+* [30. HTTP Services](#30-http-services)
+* [31. HTTP Interceptors](#31-http-interceptors)
+* [32. Error Handling](#32-error-handling)
+* [33. Custom Directives](#33-custom-directives)
+* [34. Pipes](#34-pipes)
+* [35. Custom Pipes](#35-custom-pipes)
+* [36. Lifecycle](#36-lifecycle)
+* [37. Content Projection](#37-content-projection)
+* [38. View Queries](#38-view-queries)
+* [39. RxJS](#39-rxjs)
+* [40. Observable + HttpClient](#40-observable--httpclient)
+* [41. Signal + Observable](#41-signal--observable)
+* [42. State Management](#42-state-management)
+* [43. Component Store Pattern](#43-component-store-pattern)
+* [44. Authentication](#44-authentication)
+* [45. JWT Authentication](#45-jwt-authentication)
 * [46. Environment Configuration](#46-environment-configuration)
-* [47. Angular Lifecycle](#47-angular-lifecycle)
-* [48. Change Detection](#48-change-detection)
-* [49. OnPush](#49-onpush)
-* [50. ViewChild](#50-viewchild)
-* [51. ContentChild](#51-contentchild)
-* [52. Dynamic Components](#52-dynamic-components)
-* [53. HTTP Resource](#53-http-resource)
-* [54. SSR](#54-ssr)
-* [55. Security](#55-security)
-* [56. Testing](#56-testing)
-* [57. Performance](#57-performance)
-* [58. Project Architecture](#58-project-architecture)
-* [59. Best Practices](#59-best-practices)
-* [60. Final Project](#60-final-project)
-* [61. Learning Roadmap](#61-learning-roadmap)
+* [47. Standalone Architecture](#47-standalone-architecture)
+* [48. Feature-Based Architecture](#48-feature-based-architecture)
+* [49. Deferrable Views](#49-deferrable-views)
+* [50. SSR / SSG](#50-ssr--ssg)
+* [51. Performance](#51-performance)
+* [52. Testing](#52-testing)
+* [53. HTTP Testing](#53-http-testing)
+* [54. Security](#54-security)
+* [55. Production Build](#55-production-build)
+* [56. Deployment](#56-deployment)
+* [57. Best Practices](#57-best-practices)
+* [58. Advanced Project Structure](#58-advanced-project-structure)
+* [59. Complete CRUD Example](#59-complete-crud-example)
+* [60. Learning Roadmap](#60-learning-roadmap)
 
 ---
 
@@ -79,135 +74,99 @@
 
 ## English
 
-Angular is a web application framework developed and maintained by Google.
+Angular is a TypeScript-based web framework for building scalable web applications.
 
-It is mainly used to build:
-
-* Single Page Applications (SPA)
-* Enterprise applications
-* Dashboards
-* Admin systems
-* E-commerce applications
-* POS systems
-* Large frontend applications
-
-Angular provides many features out of the box:
+Angular provides:
 
 * Components
+* Signals
+* Dependency Injection
 * Routing
 * Forms
 * HTTP Client
-* Dependency Injection
-* Signals
-* RxJS integration
-* Testing
-* SSR
-* CLI
-* Security features
+* Testing tools
+* Server-side rendering
+* Static generation
+* Hydration
+* Lazy loading
+* CLI tooling
 
-Angular applications are built mainly with **TypeScript**.
+Angular is maintained by Google.
 
-Official documentation:
+## ខ្មែរ
 
-https://angular.dev/
+Angular គឺជា web framework ដែលប្រើ **TypeScript** សម្រាប់បង្កើត web application ដែលមានទំហំធំ និងមានរចនាសម្ព័ន្ធច្បាស់លាស់។
 
-## Khmer
-
-Angular គឺជា **Web Application Framework** ដែលបង្កើត និងថែទាំដោយ Google។
-
-វាត្រូវបានប្រើសម្រាប់បង្កើត៖
-
-* Single Page Application
-* Dashboard
-* Admin System
-* E-commerce
-* POS System
-* Enterprise Application
-* Large-scale Web Application
-
-Angular មាន feature ជាច្រើនស្រាប់ដូចជា៖
+Angular មាន៖
 
 * Component
+* Signal
+* Dependency Injection
 * Routing
 * Form
 * HTTP Client
-* Dependency Injection
-* Signal
-* RxJS
 * Testing
 * SSR
-* CLI
-* Security
-
-Angular ប្រើ **TypeScript** ជាភាសាសំខាន់។
-
----
-
-# 2. Angular vs JavaScript vs React
-
-| Technology | Type                 | Main Purpose             |
-| ---------- | -------------------- | ------------------------ |
-| JavaScript | Programming Language | Web programming          |
-| TypeScript | Programming Language | JavaScript + types       |
-| React      | UI Library           | Build user interfaces    |
-| Angular    | Framework            | Complete web application |
-
-## Khmer
-
-* JavaScript = ភាសាសរសេរកម្មវិធី
-* TypeScript = JavaScript ដែលមាន Type System
-* React = UI Library
-* Angular = Full Framework
-
-Angular មាន tools ជាច្រើនស្រាប់ ដូចជា Router, Forms, HTTP, DI និង Testing។
+* SSG
+* Hydration
+* Lazy Loading
+* Angular CLI
 
 ---
 
-# 3. Prerequisites
+# 2. Why Angular?
 
-Before learning Angular, understand:
+## English
+
+Angular is useful when you want a structured framework for large applications.
+
+Advantages:
 
 ```text
-HTML
-  ↓
-CSS
-  ↓
-JavaScript
-  ↓
-TypeScript
-  ↓
 Angular
+│
+├── TypeScript
+├── Components
+├── Signals
+├── Routing
+├── Forms
+├── HTTP
+├── Dependency Injection
+├── Testing
+├── SSR
+└── CLI
 ```
 
-You should know:
+## ខ្មែរ
 
-* HTML
-* CSS
-* JavaScript
-* TypeScript
-* ES6+
-* npm
-* Git
-* HTTP
-* REST API
-* JSON
+Angular សមស្របសម្រាប់ project ដែលត្រូវការ architecture ច្បាស់ និងអាចពង្រីកបាន។
 
-## Khmer
+ឧទាហរណ៍៖
 
-មុនរៀន Angular គួរតែចេះ៖
-
-1. HTML
-2. CSS
-3. JavaScript
-4. TypeScript
-5. npm
-6. Git
-7. REST API
-8. JSON
+* Admin dashboard
+* E-commerce
+* Banking applications
+* Enterprise applications
+* Management systems
+* SaaS applications
 
 ---
 
-# 4. Installing Angular
+# 3. Requirements
+
+Angular requires Node.js.
+
+Check Node.js:
+
+```bash
+node --version
+```
+
+Check npm:
+
+```bash
+npm --version
+```
 
 Install Angular CLI:
 
@@ -215,22 +174,61 @@ Install Angular CLI:
 npm install -g @angular/cli
 ```
 
-Check version:
+Angular's official setup documentation recommends using an active LTS or maintenance LTS Node.js release, and the CLI is installed through npm.
+
+---
+
+# 4. Install Angular
+
+```bash
+npm install -g @angular/cli
+```
+
+Check Angular:
 
 ```bash
 ng version
 ```
 
-Create a project:
+You should see information similar to:
 
-```bash
-ng new angular-app
+```text
+Angular CLI
+Node
+Package Manager
+OS
+Angular
 ```
 
-Run:
+## Khmer
+
+`ng` គឺជា Angular CLI command ដែលយើងប្រើសម្រាប់បង្កើត project និង generate code។
+
+---
+
+# 5. Create Your First Project
+
+Create:
 
 ```bash
-cd angular-app
+ng new angular-learning
+```
+
+Go inside:
+
+```bash
+cd angular-learning
+```
+
+Start development server:
+
+```bash
+ng serve
+```
+
+Or:
+
+```bash
 npm start
 ```
 
@@ -240,81 +238,24 @@ Open:
 http://localhost:4200
 ```
 
-Angular's current installation guide recommends Node.js 22.22.3 or newer for the current documentation version.
-
-## Khmer
-
-`Angular CLI` គឺជា command-line tool សម្រាប់៖
-
-* បង្កើត project
-* បង្កើត component
-* Build
-* Test
-* Deploy
-* Maintain application
-
----
-
-# 5. Creating Your First Project
-
-```bash
-ng new my-angular-app
-```
-
-Useful options:
-
-```bash
-ng new my-angular-app --routing
-```
-
-```bash
-ng new my-angular-app --style=scss
-```
-
-```bash
-ng new my-angular-app --ssr
-```
-
-Generate a component:
-
-```bash
-ng generate component home
-```
-
-Short version:
-
-```bash
-ng g c home
-```
-
-Generate service:
-
-```bash
-ng generate service services/user
-```
-
-Short version:
-
-```bash
-ng g s services/user
-```
+Angular CLI provides commands such as `new`, `generate`, `serve`, `build`, `test`, and `update`.
 
 ---
 
 # 6. Angular Project Structure
 
-Typical modern Angular project:
+A modern Angular project can look like:
 
 ```text
-my-angular-app/
+angular-learning/
 │
 ├── src/
 │   ├── app/
 │   │   ├── app.component.ts
 │   │   ├── app.component.html
 │   │   ├── app.component.css
-│   │   ├── app.routes.ts
-│   │   └── app.config.ts
+│   │   ├── app.config.ts
+│   │   └── app.routes.ts
 │   │
 │   ├── assets/
 │   ├── index.html
@@ -327,27 +268,9 @@ my-angular-app/
 └── README.md
 ```
 
-## Important Files
+## Khmer
 
-### `main.ts`
-
-Application entry point.
-
-### `app.config.ts`
-
-Global application configuration.
-
-### `app.routes.ts`
-
-Application routes.
-
-### `app.component.ts`
-
-Root component.
-
-### `package.json`
-
-Project dependencies and scripts.
+`src/app` គឺជាកន្លែងសំខាន់ដែលយើងសរសេរ Angular application។
 
 ---
 
@@ -356,9 +279,22 @@ Project dependencies and scripts.
 A component contains:
 
 ```text
-TypeScript
-HTML
-CSS
+Component
+├── TypeScript
+├── HTML
+└── CSS
+```
+
+Create:
+
+```bash
+ng generate component users
+```
+
+Short version:
+
+```bash
+ng g c users
 ```
 
 Example:
@@ -370,75 +306,53 @@ import { Component } from '@angular/core';
   selector: 'app-user',
   template: `
     <h1>Hello Angular</h1>
-    <p>My first component</p>
+    <p>Welcome to Angular.</p>
   `,
 })
 export class UserComponent {}
 ```
 
-Angular components contain a TypeScript class, template, and selector. Modern Angular components are standalone by default.
-
 ## Khmer
 
-Component គឺជា UI ផ្នែកតូចមួយ។
-
-ឧទាហរណ៍៖
-
-```text
-Navbar
-Sidebar
-Login Form
-Product Card
-User Table
-Footer
-```
-
-អាចបែងចែកជា Component ដាច់ៗ។
+Component គឺជា UI building block របស់ Angular។
 
 ---
 
 # 8. Templates
 
-HTML template:
-
-```html
-<h1>Hello Angular</h1>
-
-<p>This is my application.</p>
-
-<button>Click Me</button>
-```
-
-Component:
+Template គឺជា HTML ដែល Angular ប្រើដើម្បីបង្ហាញ UI។
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
+  selector: 'app-home',
+  template: `
+    <h1>Home Page</h1>
+    <p>Welcome!</p>
+  `,
 })
-export class AppComponent {}
+export class HomeComponent {}
 ```
 
 ---
 
 # 9. Interpolation
 
-Interpolation displays data.
+Interpolation ប្រើ `{{ }}`។
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-profile',
   template: `
-    <h1>{{ title }}</h1>
+    <h1>{{ name }}</h1>
     <p>Age: {{ age }}</p>
   `,
 })
-export class AppComponent {
-  title = 'Angular Application';
+export class ProfileComponent {
+  name = 'Heng';
   age = 20;
 }
 ```
@@ -446,27 +360,19 @@ export class AppComponent {
 Output:
 
 ```text
-Angular Application
+Heng
 Age: 20
 ```
 
 ## Khmer
 
-`{{ }}` ប្រើសម្រាប់បង្ហាញ value ពី TypeScript ទៅ HTML។
-
-```typescript
-name = 'Heng';
-```
-
-```html
-<h1>{{ name }}</h1>
-```
+Interpolation គឺយក value ពី TypeScript ទៅបង្ហាញក្នុង HTML។
 
 ---
 
 # 10. Property Binding
 
-Property binding uses:
+Use:
 
 ```html
 [property]="value"
@@ -478,41 +384,26 @@ Example:
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-button',
   template: `
-    <img [src]="imageUrl" [alt]="imageAlt">
+    <button [disabled]="isDisabled">
+      Submit
+    </button>
   `,
 })
-export class AppComponent {
-  imageUrl = 'https://example.com/image.jpg';
-  imageAlt = 'Product';
+export class ButtonComponent {
+  isDisabled = true;
 }
 ```
-
-Another example:
-
-```html
-<button [disabled]="isDisabled">
-  Save
-</button>
-```
-
-```typescript
-isDisabled = true;
-```
-
-## Khmer
-
-Property Binding គឺការបញ្ជូន data ពី TypeScript ទៅ property របស់ HTML element។
 
 ---
 
 # 11. Event Binding
 
-Event binding:
+Use:
 
 ```html
-(event)="function()"
+(event)="method()"
 ```
 
 Example:
@@ -523,10 +414,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-counter',
   template: `
-    <h1>{{ count }}</h1>
-
     <button (click)="increment()">
-      Increase
+      Count: {{ count }}
     </button>
   `,
 })
@@ -541,32 +430,28 @@ export class CounterComponent {
 
 ## Khmer
 
-Event Binding ប្រើសម្រាប់ទទួល event ពី User ដូចជា៖
+Event Binding ប្រើសម្រាប់ទទួល event ពី user ដូចជា:
 
 * click
 * input
 * submit
-* keydown
-* mouseover
+* change
+* keyup
 
 ---
 
 # 12. Two-Way Binding
 
-Two-way binding:
+Two-way binding ប្រើ `[(ngModel)]`។
 
-```html
-[(ngModel)]="name"
-```
-
-Import FormsModule:
+First import:
 
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-form',
   imports: [FormsModule],
   template: `
     <input [(ngModel)]="name">
@@ -574,99 +459,90 @@ import { FormsModule } from '@angular/forms';
     <p>Hello {{ name }}</p>
   `,
 })
-export class AppComponent {
+export class FormComponent {
   name = '';
 }
 ```
 
 ## Khmer
 
-Two-way binding មានន័យថា៖
-
-```text
-TypeScript → HTML
-HTML → TypeScript
-```
-
-Data អាចផ្លាស់ប្តូរទាំងពីរទិស។
+`[(ngModel)]` មានន័យថា data អាចទៅមករវាង input និង TypeScript។
 
 ---
 
 # 13. Control Flow
 
-Modern Angular supports built-in control flow.
+Modern Angular supports built-in control flow syntax.
 
-## `@if`
+## @if
 
-```html
-@if (isLoggedIn) {
-  <p>Welcome!</p>
-} @else {
-  <p>Please login.</p>
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  template: `
+    @if (isLoggedIn) {
+      <p>Welcome back!</p>
+    } @else {
+      <p>Please login.</p>
+    }
+  `,
+})
+export class ExampleComponent {
+  isLoggedIn = true;
 }
 ```
 
-TypeScript:
+## @for
 
 ```typescript
-isLoggedIn = true;
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-users',
+  template: `
+    <ul>
+      @for (user of users; track user.id) {
+        <li>{{ user.name }}</li>
+      }
+    </ul>
+  `,
+})
+export class UsersComponent {
+  users = [
+    { id: 1, name: 'Dara' },
+    { id: 2, name: 'Sokha' },
+    { id: 3, name: 'Vanna' },
+  ];
+}
 ```
 
-## `@for`
-
-```html
-<ul>
-  @for (user of users; track user.id) {
-    <li>
-      {{ user.name }}
-    </li>
-  }
-</ul>
-```
-
-TypeScript:
-
-```typescript
-users = [
-  { id: 1, name: 'Dara' },
-  { id: 2, name: 'Sok' },
-  { id: 3, name: 'Heng' },
-];
-```
-
-## `@switch`
+## @switch
 
 ```html
 @switch (role) {
   @case ('admin') {
-    <p>Admin</p>
+    <p>Administrator</p>
   }
 
   @case ('user') {
-    <p>User</p>
+    <p>Normal User</p>
   }
 
   @default {
-    <p>Unknown</p>
+    <p>Unknown role</p>
   }
 }
 ```
 
-## Khmer
-
-Control Flow ប្រើសម្រាប់គ្រប់គ្រង logic នៅក្នុង template។
-
-```text
-@if      → condition
-@for     → loop
-@switch  → multiple conditions
-```
+Angular's migration documentation describes built-in control flow as the modern replacement for older `*ngIf`, `*ngFor`, and `*ngSwitch` patterns.
 
 ---
 
 # 14. Signals
 
-Signals are Angular's reactive state primitive.
+Signals provide reactive state.
 
 ```typescript
 import { Component, signal } from '@angular/core';
@@ -677,11 +553,7 @@ import { Component, signal } from '@angular/core';
     <h1>{{ count() }}</h1>
 
     <button (click)="increment()">
-      +
-    </button>
-
-    <button (click)="decrement()">
-      -
+      Increment
     </button>
   `,
 })
@@ -691,78 +563,56 @@ export class CounterComponent {
   increment(): void {
     this.count.update(value => value + 1);
   }
-
-  decrement(): void {
-    this.count.update(value => value - 1);
-  }
 }
 ```
 
-A signal is read by calling it:
+Important:
 
 ```typescript
 count()
 ```
 
-Update:
+Read the signal.
 
 ```typescript
 count.set(10);
 ```
 
-Or:
+Set a value.
 
 ```typescript
 count.update(value => value + 1);
 ```
 
-Angular Signals track where state is used and notify consumers when the state changes.
+Update based on previous value.
 
 ## Khmer
 
-Signal គឺជា reactive state។
+Signal គឺជា reactive state របស់ Angular។
 
-ធម្មតា៖
-
-```typescript
-count = 0;
+```text
+Signal
+  ↓
+State changes
+  ↓
+Angular knows
+  ↓
+UI updates
 ```
 
-Signal៖
-
-```typescript
-count = signal(0);
-```
-
-អាន៖
-
-```typescript
-count()
-```
-
-កំណត់ value:
-
-```typescript
-count.set(10);
-```
-
-Update:
-
-```typescript
-count.update(value => value + 1);
-```
+Angular describes Signals as its fine-grained reactivity model.
 
 ---
 
 # 15. Computed Signals
 
-Use `computed()` for derived values.
+Use `computed()` for derived state.
 
 ```typescript
 import {
   Component,
   signal,
-  computed,
+  computed
 } from '@angular/core';
 
 @Component({
@@ -777,21 +627,19 @@ export class CartComponent {
   price = signal(10);
   quantity = signal(3);
 
-  total = computed(() =>
-    this.price() * this.quantity()
-  );
+  total = computed(() => {
+    return this.price() * this.quantity();
+  });
 }
 ```
 
-## Khmer
-
-`computed()` ប្រើសម្រាប់ value ដែលគណនាចេញពី signal ផ្សេងទៀត។
+Result:
 
 ```text
-price × quantity = total
+Price: $10
+Quantity: 3
+Total: $30
 ```
-
-មិនគួរ manually update `total` ទេ។
 
 ---
 
@@ -803,122 +651,105 @@ price × quantity = total
 import {
   Component,
   effect,
-  signal,
+  signal
 } from '@angular/core';
 
 @Component({
   selector: 'app-example',
   template: `
-    <button (click)="increase()">
-      Increase
+    <button (click)="changeName()">
+      Change Name
     </button>
   `,
 })
 export class ExampleComponent {
-  count = signal(0);
+  name = signal('Heng');
 
   constructor() {
     effect(() => {
-      console.log('Count:', this.count());
+      console.log('Name:', this.name());
     });
   }
 
-  increase(): void {
-    this.count.update(value => value + 1);
+  changeName(): void {
+    this.name.set('Dara');
   }
 }
 ```
 
-## Khmer
+## Important
 
-`effect()` ប្រើនៅពេលយើងចង់ធ្វើ side effect ពេល signal ផ្លាស់ប្តូរ។
+Do not use effects for ordinary derived values.
 
-ឧទាហរណ៍៖
+Prefer:
 
-* logging
-* localStorage
-* analytics
-* external API integration
+```typescript
+computed()
+```
 
-កុំប្រើ `effect()` សម្រាប់ derived state ប្រសិនបើ `computed()` អាចប្រើបាន។
+for derived state.
 
 ---
 
 # 17. Inputs
 
-Parent → Child.
-
-Modern input:
-
-```typescript
-import {
-  Component,
-  input,
-} from '@angular/core';
-
-@Component({
-  selector: 'app-user-card',
-  template: `
-    <h2>{{ name() }}</h2>
-    <p>Age: {{ age() }}</p>
-  `,
-})
-export class UserCardComponent {
-  name = input.required<string>();
-  age = input<number>(0);
-}
-```
+Modern Angular supports signal inputs.
 
 Parent:
 
 ```typescript
 import { Component } from '@angular/core';
-import { UserCardComponent } from './user-card.component';
+import { UserComponent } from './user.component';
 
 @Component({
   selector: 'app-parent',
-  imports: [UserCardComponent],
+  imports: [UserComponent],
   template: `
-    <app-user-card
-      [name]="'Heng'"
-      [age]="22"
-    />
+    <app-user [name]="userName" />
   `,
 })
-export class ParentComponent {}
+export class ParentComponent {
+  userName = 'Heng';
+}
 ```
 
-## Khmer
+Child:
 
-Input ប្រើសម្រាប់បញ្ជូន data៖
+```typescript
+import { Component, input } from '@angular/core';
 
-```text
-Parent
-   ↓
-Child
+@Component({
+  selector: 'app-user',
+  template: `
+    <h2>{{ name() }}</h2>
+  `,
+})
+export class UserComponent {
+  name = input.required<string>();
+}
 ```
 
 ---
 
 # 18. Outputs
 
-Child → Parent.
+Child:
 
 ```typescript
 import {
   Component,
-  output,
+  output
 } from '@angular/core';
 
 @Component({
-  selector: 'app-child',
+  selector: 'app-button',
   template: `
     <button (click)="save()">
       Save
     </button>
   `,
 })
-export class ChildComponent {
+export class ButtonComponent {
   saved = output<string>();
 
   save(): void {
@@ -930,81 +761,34 @@ export class ChildComponent {
 Parent:
 
 ```typescript
-import { Component } from '@angular/core';
-import { ChildComponent } from './child.component';
-
 @Component({
   selector: 'app-parent',
-  imports: [ChildComponent],
+  imports: [ButtonComponent],
   template: `
-    <app-child
+    <app-button
       (saved)="handleSaved($event)"
     />
   `,
 })
 export class ParentComponent {
+
   handleSaved(message: string): void {
     console.log(message);
   }
 }
 ```
 
-## Khmer
-
-Output ប្រើសម្រាប់បញ្ជូន event៖
-
-```text
-Child
-  ↓
-Parent
-```
-
 ---
 
-# 19. Components Communication
-
-Common patterns:
-
-```text
-Parent → Child
-Input
-
-Child → Parent
-Output
-
-Shared State
-Service + Signal
-
-Large Application
-State Management
-```
-
-Example:
-
-```text
-App
-│
-├── Navbar
-│
-├── Sidebar
-│
-└── Dashboard
-     │
-     ├── UserCard
-     └── ProductList
-```
-
----
-
-# 20. Services
+# 19. Services
 
 Create:
 
 ```bash
-ng g s services/user
+ng generate service services/user
 ```
 
-Service:
+Example:
 
 ```typescript
 import { Injectable } from '@angular/core';
@@ -1014,8 +798,12 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  getUserName(): string {
-    return 'Heng';
+  getUsers(): string[] {
+    return [
+      'Dara',
+      'Sokha',
+      'Vanna',
+    ];
   }
 }
 ```
@@ -1027,231 +815,93 @@ import { Component, inject } from '@angular/core';
 import { UserService } from './services/user.service';
 
 @Component({
-  selector: 'app-profile',
+  selector: 'app-users',
   template: `
-    <h1>{{ name }}</h1>
+    @for (user of users; track user) {
+      <p>{{ user }}</p>
+    }
   `,
 })
-export class ProfileComponent {
+export class UsersComponent {
+
   private userService = inject(UserService);
 
-  name = this.userService.getUserName();
+  users = this.userService.getUsers();
 }
 ```
 
-## Khmer
-
-Service ប្រើសម្រាប់ logic ដែលត្រូវការ reuse។
-
-ឧទាហរណ៍៖
-
-* API
-* Authentication
-* User management
-* Shared state
-* Business logic
-
 ---
 
-# 21. Dependency Injection
+# 20. Dependency Injection
 
-Angular has Dependency Injection built into the framework.
-
-Example:
+Angular has built-in Dependency Injection.
 
 ```typescript
+import { Injectable } from '@angular/core';
+
 @Injectable({
   providedIn: 'root',
 })
 export class LoggerService {
+
   log(message: string): void {
-    console.log(message);
+    console.log(`[LOG] ${message}`);
   }
 }
-```
-
-Inject:
-
-```typescript
-private logger = inject(LoggerService);
 ```
 
 Use:
 
 ```typescript
-this.logger.log('Hello');
+import { Component, inject } from '@angular/core';
+import { LoggerService } from './logger.service';
+
+@Component({
+  selector: 'app-home',
+  template: `<button (click)="run()">Run</button>`,
+})
+export class HomeComponent {
+
+  private logger = inject(LoggerService);
+
+  run(): void {
+    this.logger.log('Button clicked');
+  }
+}
 ```
 
 ## Khmer
 
-Dependency Injection មានន័យថា Angular ជួយបង្កើត និងផ្តល់ object/service ដែល component ត្រូវការ។
+Dependency Injection ជួយឱ្យ component មិនចាំបាច់បង្កើត service ដោយខ្លួនឯង។
 
 ---
 
-# 22. Pipes
+# 21. Routing
 
-Built-in pipes:
-
-```html
-<p>{{ name | uppercase }}</p>
-
-<p>{{ name | lowercase }}</p>
-
-<p>{{ price | currency }}</p>
-
-<p>{{ date | date }}</p>
-```
-
-Example:
-
-```typescript
-name = 'heng';
-price = 100;
-date = new Date();
-```
-
-Output:
-
-```text
-HENG
-$100.00
-Sep 11, 2026
-```
-
----
-
-# 23. Custom Pipes
-
-Generate:
-
-```bash
-ng g pipe pipes/reverse
-```
-
-Code:
-
-```typescript
-import { Pipe, PipeTransform } from '@angular/core';
-
-@Pipe({
-  name: 'reverse',
-})
-export class ReversePipe implements PipeTransform {
-
-  transform(value: string): string {
-    return value
-      .split('')
-      .reverse()
-      .join('');
-  }
-}
-```
-
-Use:
-
-```html
-<p>{{ 'Angular' | reverse }}</p>
-```
-
-Output:
-
-```text
-ralugnA
-```
-
-## Khmer
-
-Custom Pipe ប្រើសម្រាប់ transform data មុនបង្ហាញ។
-
----
-
-# 24. Directives
-
-Directive changes the behavior or appearance of an element.
-
-Common built-in concepts:
-
-```html
-[class.active]="isActive"
-
-[style.color]="color"
-```
-
-Example:
-
-```html
-<p [class.active]="isActive">
-  User status
-</p>
-```
-
----
-
-# 25. Custom Directives
-
-Generate:
-
-```bash
-ng g directive directives/highlight
-```
-
-Code:
-
-```typescript
-import {
-  Directive,
-  ElementRef,
-  Renderer2,
-} from '@angular/core';
-
-@Directive({
-  selector: '[appHighlight]',
-})
-export class HighlightDirective {
-
-  constructor(
-    private element: ElementRef,
-    private renderer: Renderer2,
-  ) {
-    this.renderer.setStyle(
-      this.element.nativeElement,
-      'background',
-      'yellow'
-    );
-  }
-}
-```
-
-Use:
-
-```html
-<p appHighlight>
-  Highlight me
-</p>
-```
-
----
-
-# 26. Routing
-
-Angular Router manages navigation between views in a Single Page Application.
+Angular Router manages navigation in Angular applications.
 
 `app.routes.ts`:
 
 ```typescript
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    title: 'Home',
+    loadComponent: () =>
+      import('./pages/home/home.component')
+        .then(m => m.HomeComponent),
   },
+
   {
     path: 'about',
-    component: AboutComponent,
+    title: 'About',
+    loadComponent: () =>
+      import('./pages/about/about.component')
+        .then(m => m.AboutComponent),
   },
+
   {
     path: '**',
     redirectTo: '',
@@ -1259,11 +909,17 @@ export const routes: Routes = [
 ];
 ```
 
-Configure router:
+`app.config.ts`:
 
 ```typescript
-import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import {
+  ApplicationConfig
+} from '@angular/core';
+
+import {
+  provideRouter
+} from '@angular/router';
+
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -1286,7 +942,7 @@ Template:
 
 ---
 
-# 27. Route Parameters
+# 22. Route Parameters
 
 Routes:
 
@@ -1294,9 +950,38 @@ Routes:
 export const routes: Routes = [
   {
     path: 'users/:id',
-    component: UserDetailComponent,
+    loadComponent: () =>
+      import('./pages/user/user.component')
+        .then(m => m.UserComponent),
   },
 ];
+```
+
+Component:
+
+```typescript
+import {
+  Component,
+  inject
+} from '@angular/core';
+
+import {
+  ActivatedRoute
+} from '@angular/router';
+
+@Component({
+  selector: 'app-user',
+  template: `
+    <h1>User ID: {{ userId }}</h1>
+  `,
+})
+export class UserComponent {
+
+  private route = inject(ActivatedRoute);
+
+  userId =
+    this.route.snapshot.paramMap.get('id');
+}
 ```
 
 URL:
@@ -1305,106 +990,91 @@ URL:
 /users/123
 ```
 
-Component:
-
-```typescript
-import {
-  ActivatedRoute,
-} from '@angular/router';
-import { Component, inject } from '@angular/core';
-
-@Component({
-  selector: 'app-user-detail',
-  template: `
-    <h1>User ID: {{ userId }}</h1>
-  `,
-})
-export class UserDetailComponent {
-
-  private route = inject(ActivatedRoute);
-
-  userId = this.route.snapshot.paramMap.get('id');
-}
-```
-
-## Khmer
-
-`:id` គឺ Dynamic Route Parameter។
+Result:
 
 ```text
-/users/1
-/users/2
-/users/3
+User ID: 123
 ```
-
-Component មួយអាចទទួល ID ខុសៗគ្នា។
 
 ---
 
-# 28. Query Parameters
+# 23. Query Parameters
 
 Navigate:
 
 ```typescript
-import { Router, NavigationExtras } from '@angular/router';
+import {
+  Router
+} from '@angular/router';
 
-const router = inject(Router);
+import {
+  Component,
+  inject
+} from '@angular/core';
 
-router.navigate(
-  ['/products'],
-  {
-    queryParams: {
-      category: 'phone',
-      page: 2,
-    },
+@Component({
+  selector: 'app-search',
+  template: `
+    <button (click)="search()">
+      Search
+    </button>
+  `,
+})
+export class SearchComponent {
+
+  private router = inject(Router);
+
+  search(): void {
+    this.router.navigate(
+      ['/products'],
+      {
+        queryParams: {
+          search: 'phone',
+          page: 1,
+        },
+      }
+    );
   }
-);
+}
 ```
 
 URL:
 
 ```text
-/products?category=phone&page=2
-```
-
-Read:
-
-```typescript
-private route = inject(ActivatedRoute);
-
-category =
-  this.route.snapshot.queryParamMap.get('category');
+/products?search=phone&page=1
 ```
 
 ---
 
-# 29. Route Guards
+# 24. Route Guards
 
-Guard protects routes.
-
-Create:
+Create guard:
 
 ```bash
-ng g guard guards/auth
+ng generate guard guards/auth
 ```
 
-Example:
+Example functional guard:
 
 ```typescript
 import {
+  inject
+} from '@angular/core';
+
+import {
   CanActivateFn,
-  Router,
+  Router
 } from '@angular/router';
-import { inject } from '@angular/core';
 
 export const authGuard: CanActivateFn = () => {
 
   const router = inject(Router);
 
-  const token =
-    localStorage.getItem('token');
+  const isLoggedIn = localStorage.getItem(
+    'token'
+  );
 
-  if (token) {
+  if (isLoggedIn) {
     return true;
   }
 
@@ -1412,37 +1082,43 @@ export const authGuard: CanActivateFn = () => {
 };
 ```
 
-Route:
+Use:
 
 ```typescript
-{
-  path: 'dashboard',
-  component: DashboardComponent,
-  canActivate: [authGuard],
-}
+export const routes: Routes = [
+  {
+    path: 'dashboard',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pages/dashboard/dashboard.component')
+        .then(m => m.DashboardComponent),
+  },
+];
 ```
 
 ## Khmer
 
-Guard ប្រើសម្រាប់ការពារ route។
+Guard គឺប្រើដើម្បីការពារ route។
 
-ឧទាហរណ៍៖
+ឧទាហរណ៍:
 
 ```text
-/login
-   ↓
-authenticate
-   ↓
+User
+ ↓
 /dashboard
+ ↓
+Auth Guard
+ ↓
+Logged in?
+ ├── Yes → Dashboard
+ └── No  → Login
 ```
-
-បើគ្មាន token → `/login`
 
 ---
 
-# 30. Lazy Loading
+# 25. Lazy Loading
 
-Lazy loading prevents loading every page immediately.
+Lazy loading means loading code only when needed.
 
 ```typescript
 export const routes: Routes = [
@@ -1455,78 +1131,60 @@ export const routes: Routes = [
 ];
 ```
 
-Or lazy-load routes:
+For feature routes:
 
 ```typescript
-{
-  path: 'admin',
-  loadChildren: () =>
-    import('./admin/admin.routes')
-      .then(m => m.ADMIN_ROUTES),
-}
+export const routes: Routes = [
+  {
+    path: 'products',
+    loadChildren: () =>
+      import('./features/products/products.routes')
+        .then(m => m.PRODUCT_ROUTES),
+  },
+];
 ```
 
-## Khmer
+Benefits:
 
-Lazy Loading មានន័យថា៖
-
-```text
-User មិនទាន់ចូល Admin
-        ↓
-មិនទាន់ Load Admin code
-        ↓
-User ចូល Admin
-        ↓
-Load Admin code
-```
-
-វាជួយ performance។
+* Smaller initial bundle
+* Faster startup
+* Better scalability
 
 ---
 
-# 31. Forms
+# 26. Forms
 
-Angular supports multiple form approaches.
+Angular supports template-driven and reactive forms.
 
-Main approaches:
-
-```text
-Template-driven Forms
-Reactive Forms
-Signal Forms
-```
-
-For traditional Angular applications, Reactive Forms are widely useful for complex forms.
-
----
-
-# 32. Reactive Forms
+Simple form:
 
 ```typescript
 import {
-  Component,
-  inject,
+  Component
 } from '@angular/core';
 
 import {
-  FormBuilder,
-  ReactiveFormsModule,
+  FormsModule
 } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule],
+  imports: [FormsModule],
   template: `
-    <form [formGroup]="form" (ngSubmit)="submit()">
+    <form #form="ngForm"
+          (ngSubmit)="submit(form)">
 
       <input
-        type="email"
-        formControlName="email"
+        name="email"
+        ngModel
+        placeholder="Email"
       />
 
       <input
+        name="password"
         type="password"
-        formControlName="password"
+        ngModel
+        placeholder="Password"
       />
 
       <button type="submit">
@@ -1538,104 +1196,154 @@ import {
 })
 export class LoginComponent {
 
-  private fb = inject(FormBuilder);
-
-  form = this.fb.nonNullable.group({
-    email: [''],
-    password: [''],
-  });
-
-  submit(): void {
-    console.log(this.form.value);
+  submit(form: any): void {
+    console.log(form.value);
   }
 }
 ```
 
 ---
 
-# 33. Form Validation
+# 27. Reactive Forms
+
+Reactive forms are useful for complex forms.
 
 ```typescript
 import {
-  Validators,
+  Component,
+  inject
+} from '@angular/core';
+
+import {
+  FormBuilder,
+  ReactiveFormsModule
 } from '@angular/forms';
 
-form = this.fb.nonNullable.group({
-  email: [
-    '',
-    [
-      Validators.required,
-      Validators.email,
-    ],
-  ],
+@Component({
+  selector: 'app-register',
+  imports: [ReactiveFormsModule],
+  template: `
+    <form
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+    >
 
-  password: [
-    '',
-    [
-      Validators.required,
-      Validators.minLength(6),
-    ],
-  ],
-});
-```
+      <input
+        formControlName="name"
+        placeholder="Name"
+      />
 
-HTML:
+      <input
+        formControlName="email"
+        placeholder="Email"
+      />
 
-```html
-<form
-  [formGroup]="form"
-  (ngSubmit)="submit()"
->
+      <button type="submit">
+        Register
+      </button>
 
-  <input
-    type="email"
-    formControlName="email"
-  >
+    </form>
+  `,
+})
+export class RegisterComponent {
 
-  @if (
-    form.controls.email.touched &&
-    form.controls.email.invalid
-  ) {
-    <p>Email is invalid.</p>
+  private fb = inject(FormBuilder);
+
+  form = this.fb.nonNullable.group({
+    name: '',
+    email: '',
+  });
+
+  submit(): void {
+    console.log(this.form.getRawValue());
   }
-
-  <input
-    type="password"
-    formControlName="password"
-  >
-
-  @if (
-    form.controls.password.touched &&
-    form.controls.password.invalid
-  ) {
-    <p>Password must be at least 6 characters.</p>
-  }
-
-  <button
-    type="submit"
-    [disabled]="form.invalid"
-  >
-    Login
-  </button>
-
-</form>
+}
 ```
 
 ---
 
-# 34. HTTP Client
-
-Angular provides `HttpClient` for communicating with backend services.
-
-Configure:
+# 28. Form Validation
 
 ```typescript
 import {
-  ApplicationConfig,
+  Component,
+  inject
 } from '@angular/core';
 
 import {
-  provideHttpClient,
+  FormBuilder,
+  ReactiveFormsModule,
+  Validators
+} from '@angular/forms';
+
+@Component({
+  selector: 'app-register',
+  imports: [ReactiveFormsModule],
+  template: `
+    <form
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+    >
+
+      <input
+        formControlName="email"
+        placeholder="Email"
+      />
+
+      @if (
+        form.controls.email.touched &&
+        form.controls.email.invalid
+      ) {
+        <p>Email is required and must be valid.</p>
+      }
+
+      <button
+        type="submit"
+        [disabled]="form.invalid"
+      >
+        Submit
+      </button>
+
+    </form>
+  `,
+})
+export class RegisterComponent {
+
+  private fb = inject(FormBuilder);
+
+  form = this.fb.nonNullable.group({
+    email: [
+      '',
+      [
+        Validators.required,
+        Validators.email,
+      ],
+    ],
+  });
+
+  submit(): void {
+    if (this.form.invalid) {
+      return;
+    }
+
+    console.log(this.form.getRawValue());
+  }
+}
+```
+
+---
+
+# 29. HttpClient
+
+Configure HttpClient:
+
+```typescript
+import {
+  ApplicationConfig
+} from '@angular/core';
+
+import {
+  provideHttpClient
 } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
@@ -1645,41 +1353,88 @@ export const appConfig: ApplicationConfig = {
 };
 ```
 
-Service:
+Component/service can then inject `HttpClient`.
+
+---
+
+# 30. HTTP Services
+
+Create:
+
+```bash
+ng generate service services/product
+```
+
+Example:
 
 ```typescript
 import {
   Injectable,
-  inject,
+  inject
 } from '@angular/core';
 
 import {
-  HttpClient,
+  HttpClient
 } from '@angular/common/http';
 
 import {
-  Observable,
+  Observable
 } from 'rxjs';
 
-export interface User {
+export interface Product {
   id: number;
-  name: string;
-  email: string;
+  title: string;
+  price: number;
 }
 
 @Injectable({
   providedIn: 'root',
 })
-export class UserService {
+export class ProductService {
 
   private http = inject(HttpClient);
 
   private apiUrl =
-    'https://api.example.com/users';
+    'https://api.example.com/products';
 
-  getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(
+  getProducts(): Observable<Product[]> {
+    return this.http.get<Product[]>(
       this.apiUrl
+    );
+  }
+
+  getProduct(
+    id: number
+  ): Observable<Product> {
+    return this.http.get<Product>(
+      `${this.apiUrl}/${id}`
+    );
+  }
+
+  createProduct(
+    product: Omit<Product, 'id'>
+  ): Observable<Product> {
+    return this.http.post<Product>(
+      this.apiUrl,
+      product
+    );
+  }
+
+  updateProduct(
+    id: number,
+    product: Partial<Product>
+  ): Observable<Product> {
+    return this.http.patch<Product>(
+      `${this.apiUrl}/${id}`,
+      product
+    );
+  }
+
+  deleteProduct(
+    id: number
+  ): Observable<void> {
+    return this.http.delete<void>(
+      `${this.apiUrl}/${id}`
     );
   }
 }
@@ -1687,96 +1442,41 @@ export class UserService {
 
 ---
 
-# 35. CRUD API
+# 31. HTTP Interceptors
 
-## GET
+Interceptors are useful for:
 
-```typescript
-getUsers() {
-  return this.http.get<User[]>(
-    this.apiUrl
-  );
-}
-```
+* Authentication
+* Headers
+* Logging
+* Error handling
+* Loading indicators
 
-## GET by ID
-
-```typescript
-getUser(id: number) {
-  return this.http.get<User>(
-    `${this.apiUrl}/${id}`
-  );
-}
-```
-
-## POST
-
-```typescript
-createUser(user: User) {
-  return this.http.post<User>(
-    this.apiUrl,
-    user
-  );
-}
-```
-
-## PUT
-
-```typescript
-updateUser(
-  id: number,
-  user: User
-) {
-  return this.http.put<User>(
-    `${this.apiUrl}/${id}`,
-    user
-  );
-}
-```
-
-## DELETE
-
-```typescript
-deleteUser(id: number) {
-  return this.http.delete<void>(
-    `${this.apiUrl}/${id}`
-  );
-}
-```
-
-Angular `HttpClient` methods return RxJS Observables, and a request is made when the Observable is subscribed to.
-
----
-
-# 36. HTTP Interceptors
-
-Functional interceptors are recommended for modern Angular applications.
-
-Example authentication interceptor:
+Example:
 
 ```typescript
 import {
-  HttpInterceptorFn,
+  HttpInterceptorFn
 } from '@angular/common/http';
 
-export const authInterceptor: HttpInterceptorFn =
-  (req, next) => {
+export const authInterceptor:
+  HttpInterceptorFn = (req, next) => {
 
-    const token =
-      localStorage.getItem('token');
+  const token =
+    localStorage.getItem('token');
 
-    if (!token) {
-      return next(req);
-    }
+  if (!token) {
+    return next(req);
+  }
 
-    const clonedRequest = req.clone({
-      setHeaders: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+  const authReq = req.clone({
+    setHeaders: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
 
-    return next(clonedRequest);
-  };
+  return next(authReq);
+};
 ```
 
 Register:
@@ -1784,11 +1484,11 @@ Register:
 ```typescript
 import {
   provideHttpClient,
-  withInterceptors,
+  withInterceptors
 } from '@angular/common/http';
 
 import {
-  authInterceptor,
+  authInterceptor
 } from './interceptors/auth.interceptor';
 
 export const appConfig: ApplicationConfig = {
@@ -1802,134 +1502,21 @@ export const appConfig: ApplicationConfig = {
 };
 ```
 
-Angular's current HTTP documentation recommends functional interceptors because their ordering is more predictable.
-
 ---
 
-# 37. RxJS
+# 32. Error Handling
 
-RxJS means:
-
-```text
-Reactive Extensions for JavaScript
-```
-
-Angular uses RxJS heavily for asynchronous programming.
-
-Common concepts:
-
-```text
-Observable
-Observer
-Subscription
-Subject
-BehaviorSubject
-Operators
-```
-
----
-
-# 38. Observable
-
-Example:
-
-```typescript
-import {
-  Observable,
-} from 'rxjs';
-
-const numbers$ =
-  new Observable<number>(subscriber => {
-
-    subscriber.next(1);
-    subscriber.next(2);
-    subscriber.next(3);
-
-    subscriber.complete();
-  });
-
-numbers$.subscribe({
-  next: value => {
-    console.log(value);
-  },
-
-  complete: () => {
-    console.log('Done');
-  },
-});
-```
-
-Output:
-
-```text
-1
-2
-3
-Done
-```
-
----
-
-# 39. RxJS Operators
-
-Common operators:
-
-```text
-map
-filter
-tap
-switchMap
-mergeMap
-concatMap
-catchError
-debounceTime
-distinctUntilChanged
-forkJoin
-combineLatest
-```
-
-Example:
-
-```typescript
-import {
-  map,
-  filter,
-} from 'rxjs/operators';
-
-this.userService
-  .getUsers()
-  .pipe(
-    filter(users => users.length > 0),
-    map(users =>
-      users.map(user => ({
-        ...user,
-        name: user.name.toUpperCase(),
-      }))
-    )
-  )
-  .subscribe(users => {
-    console.log(users);
-  });
-```
-
----
-
-# 40. Error Handling
-
-Use `catchError`.
+Using RxJS:
 
 ```typescript
 import {
   catchError,
-} from 'rxjs/operators';
-
-import {
-  throwError,
+  throwError
 } from 'rxjs';
 
-getUsers() {
+getProducts(): Observable<Product[]> {
   return this.http
-    .get<User[]>(this.apiUrl)
+    .get<Product[]>(this.apiUrl)
     .pipe(
       catchError(error => {
         console.error(
@@ -1945,322 +1532,173 @@ getUsers() {
 }
 ```
 
-## Khmer
-
-Error handling សំខាន់សម្រាប់៖
-
-* API error
-* Network error
-* Authentication error
-* Validation error
-* Server error
-
----
-
-# 41. Loading State
-
-Using signals:
+Component:
 
 ```typescript
-loading = signal(false);
-users = signal<User[]>([]);
-error = signal<string | null>(null);
-```
+this.productService
+  .getProducts()
+  .subscribe({
+    next: products => {
+      console.log(products);
+    },
 
-Load:
-
-```typescript
-loadUsers(): void {
-
-  this.loading.set(true);
-  this.error.set(null);
-
-  this.userService
-    .getUsers()
-    .subscribe({
-      next: users => {
-        this.users.set(users);
-        this.loading.set(false);
-      },
-
-      error: () => {
-        this.error.set(
-          'Failed to load users'
-        );
-
-        this.loading.set(false);
-      },
-    });
-}
-```
-
-HTML:
-
-```html
-@if (loading()) {
-  <p>Loading...</p>
-}
-
-@if (error()) {
-  <p>{{ error() }}</p>
-}
-
-@if (!loading()) {
-  @for (user of users(); track user.id) {
-    <p>{{ user.name }}</p>
-  }
-}
+    error: error => {
+      console.error(error);
+    },
+  });
 ```
 
 ---
 
-# 42. Authentication
+# 33. Custom Directives
 
-Typical authentication flow:
+Create:
 
-```text
-User
- ↓
-Login Form
- ↓
-POST /login
- ↓
-Backend
- ↓
-JWT Token
- ↓
-Frontend stores token
- ↓
-Interceptor
- ↓
-Authorization: Bearer TOKEN
- ↓
-Protected API
+```bash
+ng generate directive directives/highlight
 ```
-
-Login service:
-
-```typescript
-login(email: string, password: string) {
-
-  return this.http.post<{
-    token: string;
-  }>(
-    `${this.apiUrl}/login`,
-    {
-      email,
-      password,
-    }
-  );
-}
-```
-
----
-
-# 43. JWT Authentication
 
 Example:
 
 ```typescript
-login(): void {
-
-  const { email, password } =
-    this.form.getRawValue();
-
-  this.authService
-    .login(email, password)
-    .subscribe({
-      next: response => {
-
-        localStorage.setItem(
-          'token',
-          response.token
-        );
-
-        this.router.navigate([
-          '/dashboard',
-        ]);
-      },
-    });
-}
-```
-
-Interceptor:
-
-```typescript
-const token =
-  localStorage.getItem('token');
-
-const request = req.clone({
-  setHeaders: {
-    Authorization: `Bearer ${token}`,
-  },
-});
-
-return next(request);
-```
-
-> Production applications should carefully consider token storage and XSS/CSRF risks rather than blindly copying this example.
-
----
-
-# 44. State Management
-
-There are different levels of state management.
-
-## Local state
-
-```typescript
-count = signal(0);
-```
-
-## Component state
-
-```typescript
-users = signal<User[]>([]);
-```
-
-## Shared state
-
-```text
-Service
- +
-Signals
-```
-
-## Large application
-
-Possible options include:
-
-```text
-Signal-based store pattern
-NgRx
-Other state libraries
-```
-
-Do not introduce a large state-management library unless the application's complexity actually needs it.
-
----
-
-# 45. Signal Store Pattern
-
-Simple shared store:
-
-```typescript
 import {
-  Injectable,
-  computed,
-  signal,
+  Directive,
+  ElementRef,
+  HostListener
 } from '@angular/core';
 
-export interface User {
-  id: number;
-  name: string;
-}
-
-@Injectable({
-  providedIn: 'root',
+@Directive({
+  selector: '[appHighlight]',
 })
-export class UserStore {
+export class HighlightDirective {
 
-  private _users =
-    signal<User[]>([]);
+  constructor(
+    private element: ElementRef
+  ) {}
 
-  readonly users =
-    this._users.asReadonly();
-
-  readonly count =
-    computed(() => this._users().length);
-
-  setUsers(users: User[]): void {
-    this._users.set(users);
+  @HostListener('mouseenter')
+  onMouseEnter(): void {
+    this.element.nativeElement.style.backgroundColor =
+      'yellow';
   }
 
-  addUser(user: User): void {
-    this._users.update(users => [
-      ...users,
-      user,
-    ]);
-  }
-
-  removeUser(id: number): void {
-    this._users.update(users =>
-      users.filter(user => user.id !== id)
-    );
+  @HostListener('mouseleave')
+  onMouseLeave(): void {
+    this.element.nativeElement.style.backgroundColor =
+      '';
   }
 }
-```
-
-Component:
-
-```typescript
-private userStore =
-  inject(UserStore);
-
-users =
-  this.userStore.users;
-
-count =
-  this.userStore.count;
-```
-
-HTML:
-
-```html
-<p>Total users: {{ count() }}</p>
-
-@for (user of users(); track user.id) {
-  <p>{{ user.name }}</p>
-}
-```
-
----
-
-# 46. Environment Configuration
-
-Development:
-
-```typescript
-export const environment = {
-  production: false,
-  apiUrl: 'http://localhost:3000/api',
-};
-```
-
-Production:
-
-```typescript
-export const environment = {
-  production: true,
-  apiUrl: 'https://api.example.com',
-};
 ```
 
 Use:
 
-```typescript
-import {
-  environment,
-} from '../environments/environment';
-
-const apiUrl =
-  environment.apiUrl;
+```html
+<p appHighlight>
+  Hover over me
+</p>
 ```
-
-Never put secrets such as:
-
-```text
-Database passwords
-Private API keys
-JWT signing secrets
-Cloud credentials
-```
-
-inside frontend environment files.
 
 ---
 
-# 47. Angular Lifecycle
+# 34. Pipes
+
+Built-in pipes:
+
+```html
+<p>{{ name | uppercase }}</p>
+
+<p>{{ name | lowercase }}</p>
+
+<p>{{ price | currency }}</p>
+
+<p>{{ today | date }}</p>
+```
+
+Example:
+
+```typescript
+import {
+  Component
+} from '@angular/core';
+
+import {
+  CurrencyPipe,
+  DatePipe,
+  UpperCasePipe
+} from '@angular/common';
+
+@Component({
+  selector: 'app-example',
+  imports: [
+    CurrencyPipe,
+    DatePipe,
+    UpperCasePipe,
+  ],
+  template: `
+    <p>{{ name | uppercase }}</p>
+    <p>{{ price | currency }}</p>
+    <p>{{ today | date }}</p>
+  `,
+})
+export class ExampleComponent {
+
+  name = 'angular';
+
+  price = 100;
+
+  today = new Date();
+}
+```
+
+---
+
+# 35. Custom Pipes
+
+Create:
+
+```bash
+ng generate pipe pipes/truncate
+```
+
+Example:
+
+```typescript
+import {
+  Pipe,
+  PipeTransform
+} from '@angular/core';
+
+@Pipe({
+  name: 'truncate',
+})
+export class TruncatePipe
+  implements PipeTransform {
+
+  transform(
+    value: string,
+    length = 20
+  ): string {
+
+    if (value.length <= length) {
+      return value;
+    }
+
+    return value.slice(0, length) + '...';
+  }
+}
+```
+
+Use:
+
+```html
+<p>
+  {{ description | truncate:30 }}
+</p>
+```
+
+---
+
+# 36. Lifecycle
 
 Common lifecycle hooks:
 
@@ -2282,12 +1720,12 @@ Example:
 import {
   Component,
   OnInit,
-  OnDestroy,
+  OnDestroy
 } from '@angular/core';
 
 @Component({
   selector: 'app-example',
-  template: `<p>Hello</p>`,
+  template: `<h1>Hello</h1>`,
 })
 export class ExampleComponent
   implements OnInit, OnDestroy {
@@ -2304,72 +1742,42 @@ export class ExampleComponent
 
 ---
 
-# 48. Change Detection
+# 37. Content Projection
 
-Angular must determine when the UI needs updating.
+Use `<ng-content>`.
 
-Example:
-
-```typescript
-count = signal(0);
-```
-
-When:
-
-```typescript
-this.count.set(10);
-```
-
-Angular updates places where the signal is consumed.
-
-Signals are designed for granular reactive tracking.
-
----
-
-# 49. OnPush
-
-For component-level optimization:
+Child:
 
 ```typescript
 import {
-  ChangeDetectionStrategy,
-  Component,
+  Component
 } from '@angular/core';
 
 @Component({
-  selector: 'app-product',
-  changeDetection:
-    ChangeDetectionStrategy.OnPush,
-
+  selector: 'app-card',
   template: `
-    <h1>{{ title }}</h1>
+    <div class="card">
+      <ng-content />
+    </div>
   `,
 })
-export class ProductComponent {
-  title = 'Products';
-}
+export class CardComponent {}
 ```
 
-Use immutable data:
+Parent:
 
-```typescript
-const updatedUsers = [
-  ...users,
-  newUser,
-];
-```
-
-Instead of mutating:
-
-```typescript
-users.push(newUser);
+```html
+<app-card>
+  <h2>Product</h2>
+  <p>This is a product.</p>
+</app-card>
 ```
 
 ---
 
-# 50. ViewChild
+# 38. View Queries
 
-`ViewChild` accesses something inside the component view.
+Modern Angular provides query APIs such as `viewChild`.
 
 Example:
 
@@ -2377,638 +1785,990 @@ Example:
 import {
   Component,
   ElementRef,
-  ViewChild,
+  viewChild
 } from '@angular/core';
 
 @Component({
   selector: 'app-example',
   template: `
-    <input #username>
+    <input #nameInput>
 
-    <button (click)="focusInput()">
+    <button (click)="focus()">
       Focus
     </button>
   `,
 })
 export class ExampleComponent {
 
-  @ViewChild('username')
-  username!: ElementRef<HTMLInputElement>;
+  nameInput =
+    viewChild.required<ElementRef>('nameInput');
 
-  focusInput(): void {
-    this.username.nativeElement.focus();
+  focus(): void {
+    this.nameInput()
+      .nativeElement
+      .focus();
   }
 }
 ```
 
-## Khmer
-
-`ViewChild` ប្រើសម្រាប់ access element/component នៅក្នុង view របស់ component។
-
 ---
 
-# 51. ContentChild
+# 39. RxJS
 
-Content projection:
-
-```html
-<app-card>
-  <p>Hello from parent</p>
-</app-card>
-```
-
-Card:
-
-```html
-<div class="card">
-  <ng-content />
-</div>
-```
-
-This allows the parent to provide content to the child.
-
----
-
-# 52. Dynamic Components
-
-Angular can create components dynamically.
-
-Example concept:
-
-```typescript
-import {
-  ViewContainerRef,
-} from '@angular/core';
-
-export class DashboardComponent {
-
-  constructor(
-    private container:
-      ViewContainerRef
-  ) {}
-
-  load(): void {
-    // Dynamic component creation
-  }
-}
-```
-
-A common modern pattern is to use `ViewContainerRef` with `createComponent()`.
-
-```typescript
-const componentRef =
-  this.container.createComponent(
-    UserCardComponent
-  );
-```
-
----
-
-# 53. HTTP Resource
-
-Modern Angular provides reactive resource APIs for asynchronous data.
-
-Example concept:
-
-```typescript
-import {
-  httpResource,
-} from '@angular/common/http';
-
-userResource =
-  httpResource<User>(
-    () => '/api/user'
-  );
-```
-
-The exact resource API should be used according to the Angular version and project requirements.
-
-Angular's current documentation lists `httpResource()` among its modern reactive APIs.
-
----
-
-# 54. SSR
-
-SSR means:
-
-```text
-Server-Side Rendering
-```
-
-Normal SPA:
-
-```text
-Browser
- ↓
-JavaScript
- ↓
-Angular
- ↓
-HTML
-```
-
-SSR:
-
-```text
-Browser
- ↓
-Server
- ↓
-Angular renders HTML
- ↓
-Browser
- ↓
-Hydration
-```
-
-Create project with SSR:
-
-```bash
-ng new my-app --ssr
-```
-
-Benefits:
-
-* Better initial rendering
-* SEO improvements
-* Better perceived performance
-
-Angular supports SSR and static site generation.
-
----
-
-# 55. Security
-
-Important Angular security practices:
-
-## 1. Never trust frontend validation
-
-Frontend:
-
-```typescript
-Validators.required
-```
-
-Backend must also validate.
-
-## 2. Avoid unsafe HTML
-
-Do not blindly bypass Angular sanitization.
-
-Avoid:
-
-```typescript
-bypassSecurityTrustHtml()
-```
-
-unless you fully understand the security implications.
-
-## 3. Protect APIs
-
-Frontend guards are not enough.
-
-Backend must verify:
-
-```text
-Authentication
-Authorization
-Role
-Permission
-Token
-```
-
-## 4. Avoid secrets
-
-Never put:
-
-```text
-DB_PASSWORD
-JWT_SECRET
-PRIVATE_KEY
-```
-
-in frontend code.
-
----
-
-# 56. Testing
-
-Angular supports unit testing.
+Angular uses RxJS extensively for asynchronous streams.
 
 Example:
 
 ```typescript
-describe('CounterComponent', () => {
+import {
+  Observable,
+  interval
+} from 'rxjs';
 
-  it('should increase count', () => {
+const counter$: Observable<number> =
+  interval(1000);
+```
 
-    let count = 0;
+Subscribe:
 
-    count++;
-
-    expect(count).toBe(1);
+```typescript
+const subscription =
+  counter$.subscribe(value => {
+    console.log(value);
   });
-
-});
 ```
 
-Component testing can use Angular's testing utilities.
-
-Current Angular tooling uses Vitest as the primary test runner in modern Angular versions.
-
-Run tests:
-
-```bash
-ng test
-```
+Always clean up subscriptions when needed.
 
 ---
 
-# 57. Performance
-
-Important performance techniques:
-
-## Lazy Loading
+# 40. Observable + HttpClient
 
 ```typescript
-loadComponent()
-```
+import {
+  Component,
+  inject
+} from '@angular/core';
 
-## Track Lists
+import {
+  ProductService
+} from './product.service';
 
-```html
-@for (
-  user of users();
-  track user.id
-) {
-  ...
+@Component({
+  selector: 'app-products',
+  template: `
+    @for (
+      product of products;
+      track product.id
+    ) {
+      <p>
+        {{ product.title }}
+      </p>
+    }
+  `,
+})
+export class ProductsComponent {
+
+  private service =
+    inject(ProductService);
+
+  products: Product[] = [];
+
+  ngOnInit(): void {
+    this.service
+      .getProducts()
+      .subscribe(products => {
+        this.products = products;
+      });
+  }
 }
 ```
 
-## Signals
+---
+
+# 41. Signal + Observable
+
+Angular provides interop between Signals and RxJS.
+
+Example:
 
 ```typescript
-users = signal<User[]>([]);
+import {
+  Component
+} from '@angular/core';
+
+import {
+  toSignal
+} from '@angular/core/rxjs-interop';
+
+import {
+  interval
+} from 'rxjs';
+
+@Component({
+  selector: 'app-counter',
+  template: `
+    <p>{{ counter() }}</p>
+  `,
+})
+export class CounterComponent {
+
+  counter = toSignal(
+    interval(1000),
+    {
+      initialValue: 0,
+    }
+  );
+}
 ```
 
-## OnPush
+Now:
 
 ```typescript
-changeDetection:
-  ChangeDetectionStrategy.OnPush
+counter()
 ```
 
-## Avoid unnecessary subscriptions
-
-Prefer:
-
-```text
-async pipe
-signals
-toSignal()
-```
-
-when appropriate.
-
-## Production build
-
-```bash
-ng build
-```
+is a signal.
 
 ---
 
-# 58. Project Architecture
+# 42. State Management
 
-For a real-world application:
+For small applications, Signals can provide simple state management.
 
-```text
-src/
-│
-└── app/
-    │
-    ├── core/
-    │   ├── guards/
-    │   ├── interceptors/
-    │   ├── services/
-    │   └── models/
-    │
-    ├── shared/
-    │   ├── components/
-    │   ├── directives/
-    │   └── pipes/
-    │
-    ├── features/
-    │   │
-    │   ├── auth/
-    │   │   ├── pages/
-    │   │   ├── components/
-    │   │   └── services/
-    │   │
-    │   ├── users/
-    │   │   ├── pages/
-    │   │   ├── components/
-    │   │   └── services/
-    │   │
-    │   └── products/
-    │       ├── pages/
-    │       ├── components/
-    │       └── services/
-    │
-    ├── app.component.ts
-    ├── app.config.ts
-    └── app.routes.ts
-```
-
-## Explanation
-
-### `core`
-
-Application-wide services.
-
-```text
-Auth
-Guards
-Interceptors
-Global services
-```
-
-### `shared`
-
-Reusable UI.
-
-```text
-Button
-Modal
-Table
-Pipe
-Directive
-```
-
-### `features`
-
-Business features.
-
-```text
-Auth
-Users
-Products
-Orders
-Reports
-```
-
-## Khmer
-
-Architecture ល្អជួយឱ្យ project ធំមិនច្របូកច្របល់។
-
-គោលការណ៍៖
-
-```text
-Core
- ↓
-Global application logic
-
-Shared
- ↓
-Reusable UI
-
-Features
- ↓
-Business modules
-```
-
----
-
-# 59. Best Practices
-
-## 1. Use TypeScript types
-
-Bad:
+Example:
 
 ```typescript
-user: any;
-```
+import {
+  Injectable,
+  signal,
+  computed
+} from '@angular/core';
 
-Better:
-
-```typescript
-interface User {
+export interface User {
   id: number;
   name: string;
-  email: string;
 }
 
-user: User;
+@Injectable({
+  providedIn: 'root',
+})
+export class UserState {
+
+  private users =
+    signal<User[]>([]);
+
+  readonly userList =
+    this.users.asReadonly();
+
+  readonly userCount =
+    computed(() => this.users().length);
+
+  setUsers(users: User[]): void {
+    this.users.set(users);
+  }
+
+  addUser(user: User): void {
+    this.users.update(users => [
+      ...users,
+      user,
+    ]);
+  }
+
+  removeUser(id: number): void {
+    this.users.update(users =>
+      users.filter(user => user.id !== id)
+    );
+  }
+}
 ```
 
 ---
 
-## 2. Keep components small
+# 43. Component Store Pattern
 
-Bad:
-
-```text
-One component
- ├── API
- ├── Authentication
- ├── Validation
- ├── Business logic
- ├── 1000 lines HTML
- └── 1000 lines TypeScript
-```
-
-Better:
+For a larger application, separate:
 
 ```text
+UI
+ ↓
 Component
+ ↓
+State
  ↓
 Service
  ↓
 API
 ```
 
+Example:
+
+```text
+products/
+├── data-access/
+│   ├── product.service.ts
+│   └── product.state.ts
+│
+├── pages/
+│   ├── product-list/
+│   └── product-detail/
+│
+└── ui/
+    ├── product-card/
+    └── product-table/
+```
+
+This makes applications easier to maintain.
+
 ---
 
-## 3. Keep API logic in services
+# 44. Authentication
+
+A basic authentication architecture:
+
+```text
+Login Page
+    ↓
+Auth Service
+    ↓
+POST /login
+    ↓
+Backend
+    ↓
+JWT
+    ↓
+Store token
+    ↓
+Interceptor
+    ↓
+Authorization Header
+    ↓
+Protected API
+```
+
+Auth service:
+
+```typescript
+import {
+  Injectable,
+  signal
+} from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class AuthService {
+
+  private token =
+    signal<string | null>(
+      localStorage.getItem('token')
+    );
+
+  isAuthenticated(): boolean {
+    return !!this.token();
+  }
+
+  login(token: string): void {
+    localStorage.setItem(
+      'token',
+      token
+    );
+
+    this.token.set(token);
+  }
+
+  logout(): void {
+    localStorage.removeItem('token');
+
+    this.token.set(null);
+  }
+
+  getToken(): string | null {
+    return this.token();
+  }
+}
+```
+
+> For production authentication, carefully consider token storage and browser security. Do not blindly store sensitive credentials in browser storage.
+
+---
+
+# 45. JWT Authentication
+
+Login:
+
+```typescript
+login(
+  email: string,
+  password: string
+) {
+  return this.http.post<{
+    accessToken: string;
+  }>(
+    '/api/auth/login',
+    {
+      email,
+      password,
+    }
+  );
+}
+```
+
+Then:
+
+```typescript
+this.authService
+  .login(email, password)
+  .subscribe(response => {
+    this.authService.login(
+      response.accessToken
+    );
+  });
+```
+
+Interceptor:
+
+```typescript
+export const authInterceptor:
+  HttpInterceptorFn = (req, next) => {
+
+  const token =
+    inject(AuthService).getToken();
+
+  if (!token) {
+    return next(req);
+  }
+
+  return next(
+    req.clone({
+      setHeaders: {
+        Authorization:
+          `Bearer ${token}`,
+      },
+    })
+  );
+};
+```
+
+---
+
+# 46. Environment Configuration
+
+Example:
+
+```text
+src/
+├── environments/
+│   ├── environment.ts
+│   └── environment.development.ts
+```
+
+`environment.ts`:
+
+```typescript
+export const environment = {
+  production: true,
+  apiUrl: 'https://api.example.com',
+};
+```
+
+Development:
+
+```typescript
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:3000',
+};
+```
+
+Use:
+
+```typescript
+import {
+  environment
+} from '../environments/environment';
+
+console.log(environment.apiUrl);
+```
+
+> Never put real passwords, private keys, database credentials, or other secrets into frontend environment files. Frontend values are ultimately delivered to the browser.
+
+---
+
+# 47. Standalone Architecture
+
+Modern Angular applications commonly use standalone components.
+
+Example:
+
+```typescript
+import {
+  Component
+} from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  template: `
+    <h1>Hello Angular</h1>
+  `,
+})
+export class HomeComponent {}
+```
+
+A standalone component can directly import its template dependencies.
+
+Modern applications generally do not need to create a large `NgModule` hierarchy.
+
+---
+
+# 48. Feature-Based Architecture
+
+Recommended structure:
+
+```text
+src/app/
+│
+├── core/
+│   ├── auth/
+│   ├── guards/
+│   ├── interceptors/
+│   └── services/
+│
+├── shared/
+│   ├── components/
+│   ├── directives/
+│   └── pipes/
+│
+├── features/
+│   ├── auth/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── auth.routes.ts
+│   │
+│   ├── products/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── models/
+│   │   └── products.routes.ts
+│   │
+│   └── orders/
+│       ├── pages/
+│       ├── components/
+│       ├── services/
+│       └── orders.routes.ts
+│
+├── app.component.ts
+├── app.config.ts
+└── app.routes.ts
+```
+
+## Khmer
+
+Feature-based architecture គឺរៀបចំ code តាម business feature ជំនួសឱ្យរៀបចំតាម file type តែប៉ុណ្ណោះ។
+
+---
+
+# 49. Deferrable Views
+
+Angular supports `@defer` for deferring parts of a template.
+
+```html
+@defer {
+  <app-heavy-chart />
+} @placeholder {
+  <p>Loading chart...</p>
+} @loading {
+  <p>Loading...</p>
+}
+```
+
+This can help delay expensive UI until it is needed.
+
+Angular's current documentation lists deferrable views as a performance feature for lazy-loading parts of templates.
+
+---
+
+# 50. SSR / SSG
+
+Angular supports:
+
+```text
+CSR
+SSR
+SSG / Prerender
+Hydration
+Hybrid Rendering
+```
+
+Create an SSR project:
+
+```bash
+ng new my-app --ssr
+```
+
+Or add SSR:
+
+```bash
+ng add @angular/ssr
+```
+
+Angular's current SSR documentation describes CSR, SSR, and prerendering as selectable rendering modes in hybrid applications.
+
+---
+
+# 51. Performance
+
+Important performance techniques:
+
+## 1. Lazy loading
+
+```typescript
+{
+  path: 'admin',
+  loadChildren: () =>
+    import('./admin/admin.routes')
+      .then(m => m.ADMIN_ROUTES)
+}
+```
+
+## 2. Signals
+
+```typescript
+count = signal(0);
+```
+
+## 3. Computed state
+
+```typescript
+total = computed(
+  () => this.price() * this.quantity()
+);
+```
+
+## 4. Track items
+
+```html
+@for (user of users; track user.id) {
+  <p>{{ user.name }}</p>
+}
+```
+
+## 5. Deferrable views
+
+```html
+@defer {
+  <app-chart />
+}
+```
+
+## 6. Avoid unnecessary work
 
 Bad:
 
 ```typescript
-this.http.get('/api/users');
+getTotal(): number {
+  return this.price * this.quantity;
+}
 ```
 
-inside many components.
-
-Better:
+Prefer derived state when appropriate:
 
 ```typescript
-userService.getUsers();
+total = computed(
+  () => this.price() * this.quantity()
+);
 ```
-
-Angular's HTTP documentation recommends reusable injectable services to isolate and encapsulate data access logic.
 
 ---
 
-## 4. Use interfaces
+# 52. Testing
+
+Angular projects include testing support.
+
+Run:
+
+```bash
+ng test
+```
+
+A simple test:
+
+```typescript
+import {
+  TestBed
+} from '@angular/core/testing';
+
+describe('Calculator', () => {
+
+  it('should add numbers', () => {
+
+    const result = 2 + 3;
+
+    expect(result).toBe(5);
+  });
+
+});
+```
+
+---
+
+# 53. HTTP Testing
+
+Angular provides HTTP testing utilities for mocking HTTP requests.
+
+Example:
+
+```typescript
+import {
+  TestBed
+} from '@angular/core/testing';
+
+import {
+  provideHttpClient
+} from '@angular/common/http';
+
+import {
+  provideHttpClientTesting,
+  HttpTestingController
+} from '@angular/common/http/testing';
+
+describe('ProductService', () => {
+
+  let httpTesting:
+    HttpTestingController;
+
+  beforeEach(() => {
+
+    TestBed.configureTestingModule({
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting(),
+      ],
+    });
+
+    httpTesting =
+      TestBed.inject(
+        HttpTestingController
+      );
+  });
+
+  afterEach(() => {
+    httpTesting.verify();
+  });
+
+});
+```
+
+Important:
+
+```typescript
+provideHttpClient()
+```
+
+should come before:
+
+```typescript
+provideHttpClientTesting()
+```
+
+when both are needed.
+
+---
+
+# 54. Security
+
+Important Angular security rules:
+
+## Never trust user input
+
+Bad:
+
+```typescript
+element.innerHTML = userInput;
+```
+
+Avoid bypassing Angular security without a strong reason.
+
+Be careful with:
+
+```typescript
+DomSanitizer
+```
+
+Never put secrets in:
+
+```text
+environment.ts
+localStorage
+frontend source code
+```
+
+Use HTTPS.
+
+Validate data on the backend too.
+
+Use authentication and authorization on the server.
+
+## Khmer
+
+Frontend security មិនអាចជំនួស backend security បានទេ។
+
+Backend ត្រូវ validate:
+
+```text
+Authentication
+Authorization
+Validation
+Rate limiting
+Database permissions
+```
+
+---
+
+# 55. Production Build
+
+Build:
+
+```bash
+ng build
+```
+
+Production configuration:
+
+```bash
+ng build --configuration production
+```
+
+Output normally goes into:
+
+```text
+dist/
+```
+
+Preview with an appropriate static server or deployment platform.
+
+---
+
+# 56. Deployment
+
+Angular can be deployed to many hosting platforms.
+
+Common options:
+
+```text
+Vercel
+Netlify
+Firebase Hosting
+Cloudflare Pages
+AWS
+Azure
+Google Cloud
+Nginx
+Docker
+```
+
+Typical workflow:
+
+```bash
+npm install
+ng build
+```
+
+Then deploy the generated production output according to your hosting configuration.
+
+For SSR/hybrid applications, deployment differs because a server runtime may be required depending on the rendering configuration.
+
+---
+
+# 57. Best Practices
+
+## Naming
+
+Good:
+
+```text
+user-profile.component.ts
+product.service.ts
+auth.guard.ts
+auth.interceptor.ts
+```
+
+Avoid:
+
+```text
+abc.ts
+test2.ts
+newfile.ts
+```
+
+---
+
+## Components
+
+Keep components focused.
+
+Bad:
+
+```text
+Component
+ ├── API
+ ├── Database logic
+ ├── Authentication
+ ├── 1000 lines UI
+ └── Business logic
+```
+
+Better:
+
+```text
+Component
+   ↓
+Service
+   ↓
+API
+```
+
+---
+
+## Services
+
+Use services for shared business/data logic.
+
+```typescript
+@Injectable({
+  providedIn: 'root',
+})
+export class ProductService {}
+```
+
+---
+
+## Signals
+
+Use Signals for local and simple reactive state.
+
+```typescript
+users = signal<User[]>([]);
+```
+
+Use:
+
+```typescript
+computed()
+```
+
+for derived state.
+
+---
+
+## Routing
+
+Prefer lazy loading for large features.
+
+```typescript
+loadChildren
+loadComponent
+```
+
+---
+
+## HTTP
+
+Keep API calls in services.
+
+Good:
+
+```text
+Component
+   ↓
+ProductService
+   ↓
+HttpClient
+   ↓
+API
+```
+
+Avoid:
+
+```text
+Component
+   ↓
+Many HTTP calls
+```
+
+---
+
+# 58. Advanced Project Structure
+
+For a large enterprise application:
+
+```text
+src/
+└── app/
+    │
+    ├── core/
+    │   ├── auth/
+    │   ├── guards/
+    │   ├── interceptors/
+    │   ├── services/
+    │   └── layout/
+    │
+    ├── shared/
+    │   ├── ui/
+    │   ├── directives/
+    │   ├── pipes/
+    │   └── utils/
+    │
+    ├── features/
+    │   │
+    │   ├── dashboard/
+    │   │   ├── components/
+    │   │   ├── pages/
+    │   │   ├── services/
+    │   │   ├── models/
+    │   │   └── dashboard.routes.ts
+    │   │
+    │   ├── users/
+    │   │   ├── components/
+    │   │   ├── pages/
+    │   │   ├── services/
+    │   │   ├── models/
+    │   │   └── users.routes.ts
+    │   │
+    │   ├── products/
+    │   │   ├── components/
+    │   │   ├── pages/
+    │   │   ├── services/
+    │   │   ├── models/
+    │   │   └── products.routes.ts
+    │   │
+    │   └── orders/
+    │       ├── components/
+    │       ├── pages/
+    │       ├── services/
+    │       ├── models/
+    │       └── orders.routes.ts
+    │
+    ├── app.component.ts
+    ├── app.config.ts
+    └── app.routes.ts
+```
+
+---
+
+# 59. Complete CRUD Example
+
+Let's create a simple Product CRUD architecture.
+
+## Model
 
 ```typescript
 export interface Product {
   id: number;
   name: string;
   price: number;
-  stock: number;
-}
-```
-
----
-
-## 5. Use meaningful names
-
-Bad:
-
-```typescript
-x
-data
-foo
-abc
-```
-
-Good:
-
-```typescript
-products
-selectedProduct
-totalPrice
-isLoading
-```
-
----
-
-## 6. Avoid unnecessary state
-
-Bad:
-
-```typescript
-price = signal(100);
-quantity = signal(2);
-total = signal(200);
-```
-
-Better:
-
-```typescript
-price = signal(100);
-quantity = signal(2);
-
-total = computed(() =>
-  this.price() * this.quantity()
-);
-```
-
----
-
-# 60. Final Project
-
-After learning the above topics, build a complete project.
-
-## 🛒 E-Commerce Admin System
-
-Features:
-
-```text
-Authentication
-│
-├── Login
-├── Logout
-└── Authorization
-```
-
-Products:
-
-```text
-Products
-├── List
-├── Create
-├── Edit
-├── Delete
-└── Search
-```
-
-Orders:
-
-```text
-Orders
-├── Order List
-├── Order Detail
-├── Update Status
-└── Cancel Order
-```
-
-Users:
-
-```text
-Users
-├── User List
-├── User Detail
-├── Create
-├── Edit
-└── Delete
-```
-
-Dashboard:
-
-```text
-Dashboard
-├── Total Sales
-├── Total Orders
-├── Total Customers
-├── Products
-└── Reports
-```
-
----
-
-# Example Final Architecture
-
-```text
-Angular Application
-│
-├── Authentication
-│
-├── Router
-│
-├── Guards
-│
-├── Interceptors
-│
-├── Components
-│
-├── Services
-│
-├── Signals
-│
-├── RxJS
-│
-├── Forms
-│
-├── HTTP Client
-│
-├── State Management
-│
-└── Backend API
-```
-
----
-
-# Complete Example: User Management
-
-## Model
-
-```typescript
-export interface User {
-  id: number;
-  name: string;
-  email: string;
 }
 ```
 
@@ -3019,65 +2779,71 @@ export interface User {
 ```typescript
 import {
   Injectable,
-  inject,
+  inject
 } from '@angular/core';
 
 import {
-  HttpClient,
+  HttpClient
 } from '@angular/common/http';
 
 import {
-  Observable,
+  Observable
 } from 'rxjs';
 
 import {
-  User,
-} from '../models/user';
+  Product
+} from '../models/product';
 
 @Injectable({
   providedIn: 'root',
 })
-export class UserService {
+export class ProductService {
 
-  private http = inject(HttpClient);
+  private http =
+    inject(HttpClient);
 
-  private readonly apiUrl =
-    'https://api.example.com/users';
+  private apiUrl =
+    'http://localhost:3000/products';
 
-  getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(
+  getAll(): Observable<Product[]> {
+    return this.http.get<Product[]>(
       this.apiUrl
     );
   }
 
-  getUser(id: number): Observable<User> {
-    return this.http.get<User>(
+  getById(
+    id: number
+  ): Observable<Product> {
+
+    return this.http.get<Product>(
       `${this.apiUrl}/${id}`
     );
   }
 
-  createUser(
-    user: Omit<User, 'id'>
-  ): Observable<User> {
+  create(
+    product: Omit<Product, 'id'>
+  ): Observable<Product> {
 
-    return this.http.post<User>(
+    return this.http.post<Product>(
       this.apiUrl,
-      user
+      product
     );
   }
 
-  updateUser(
+  update(
     id: number,
-    user: Partial<User>
-  ): Observable<User> {
+    product: Partial<Product>
+  ): Observable<Product> {
 
-    return this.http.patch<User>(
+    return this.http.patch<Product>(
       `${this.apiUrl}/${id}`,
-      user
+      product
     );
   }
 
-  deleteUser(id: number): Observable<void> {
+  delete(
+    id: number
+  ): Observable<void> {
 
     return this.http.delete<void>(
       `${this.apiUrl}/${id}`
@@ -3088,82 +2854,124 @@ export class UserService {
 
 ---
 
-## Component
+## List Component
 
 ```typescript
 import {
   Component,
   inject,
-  signal,
+  signal
 } from '@angular/core';
 
 import {
-  UserService,
-} from '../../services/user.service';
+  Product
+} from '../../models/product';
 
 import {
-  User,
-} from '../../models/user';
+  ProductService
+} from '../../services/product.service';
 
 @Component({
-  selector: 'app-user-list',
-  templateUrl: './user-list.component.html',
+  selector: 'app-product-list',
+  template: `
+
+    <h1>Products</h1>
+
+    @if (loading()) {
+      <p>Loading...</p>
+    }
+
+    @if (error()) {
+      <p>{{ error() }}</p>
+    }
+
+    <ul>
+      @for (
+        product of products();
+        track product.id
+      ) {
+
+        <li>
+          <strong>
+            {{ product.name }}
+          </strong>
+
+          -
+
+          ${{ product.price }}
+
+          <button
+            (click)="deleteProduct(product.id)"
+          >
+            Delete
+          </button>
+        </li>
+      }
+    </ul>
+
+  `,
 })
-export class UserListComponent {
+export class ProductListComponent {
 
-  private userService =
-    inject(UserService);
+  private productService =
+    inject(ProductService);
 
-  users = signal<User[]>([]);
+  products =
+    signal<Product[]>([]);
 
-  loading = signal(false);
+  loading =
+    signal(false);
 
-  error = signal<string | null>(null);
+  error =
+    signal<string | null>(null);
 
-  ngOnInit(): void {
-    this.loadUsers();
+  constructor() {
+    this.loadProducts();
   }
 
-  loadUsers(): void {
+  loadProducts(): void {
 
     this.loading.set(true);
-    this.error.set(null);
 
-    this.userService
-      .getUsers()
+    this.productService
+      .getAll()
       .subscribe({
-        next: users => {
-          this.users.set(users);
+
+        next: products => {
+          this.products.set(products);
           this.loading.set(false);
         },
 
-        error: error => {
-          console.error(error);
-
+        error: () => {
           this.error.set(
-            'Unable to load users.'
+            'Failed to load products.'
           );
 
           this.loading.set(false);
         },
+
       });
   }
 
-  deleteUser(id: number): void {
+  deleteProduct(id: number): void {
 
-    this.userService
-      .deleteUser(id)
+    this.productService
+      .delete(id)
       .subscribe({
         next: () => {
-          this.users.update(users =>
-            users.filter(
-              user => user.id !== id
-            )
+          this.products.update(
+            products =>
+              products.filter(
+                product =>
+                  product.id !== id
+              )
           );
         },
 
-        error: error => {
-          console.error(error);
+        error: () => {
+          this.error.set(
+            'Failed to delete product.'
+          );
         },
       });
   }
@@ -3172,416 +2980,171 @@ export class UserListComponent {
 
 ---
 
-## HTML
+# 60. Learning Roadmap
 
-```html
-<h1>Users</h1>
+## Beginner
 
-@if (loading()) {
-
-  <p>Loading users...</p>
-
-} @else if (error()) {
-
-  <p>{{ error() }}</p>
-
-} @else {
-
-  @if (users().length === 0) {
-
-    <p>No users found.</p>
-
-  } @else {
-
-    <table>
-
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-
-      <tbody>
-
-        @for (
-          user of users();
-          track user.id
-        ) {
-
-          <tr>
-
-            <td>
-              {{ user.id }}
-            </td>
-
-            <td>
-              {{ user.name }}
-            </td>
-
-            <td>
-              {{ user.email }}
-            </td>
-
-            <td>
-
-              <button
-                (click)="deleteUser(user.id)"
-              >
-                Delete
-              </button>
-
-            </td>
-
-          </tr>
-
-        }
-
-      </tbody>
-
-    </table>
-
-  }
-
-}
-```
-
----
-
-# 61. Learning Roadmap
-
-## 🟢 Beginner
-
-Learn in this order:
+Learn these first:
 
 ```text
-1. HTML
-2. CSS
-3. JavaScript
-4. TypeScript
-5. Angular CLI
-6. Components
-7. Templates
-8. Interpolation
-9. Property Binding
-10. Event Binding
-11. Two-Way Binding
-12. Control Flow
-13. Pipes
-14. Directives
+1. TypeScript
+2. Angular CLI
+3. Components
+4. Templates
+5. Interpolation
+6. Property Binding
+7. Event Binding
+8. Forms
+9. Services
+10. Dependency Injection
 ```
 
 ---
 
-# 🟡 Intermediate
+## Intermediate
 
 Then learn:
 
 ```text
-15. Services
-16. Dependency Injection
-17. Signals
-18. Computed
-19. Effects
-20. Input
-21. Output
-22. Component Communication
-23. Routing
-24. Route Parameters
-25. Query Parameters
-26. Guards
-27. Lazy Loading
-28. Reactive Forms
-29. Validation
-30. HTTP Client
-31. CRUD
-32. RxJS
-33. Observable
-34. RxJS Operators
-35. Error Handling
+11. Signals
+12. Computed
+13. Effects
+14. Inputs
+15. Outputs
+16. Routing
+17. Route Parameters
+18. Guards
+19. Lazy Loading
+20. Reactive Forms
+21. HttpClient
+22. RxJS
+23. Pipes
+24. Directives
 ```
 
 ---
 
-# 🔴 Advanced
+## Advanced
 
-Then learn:
+Then:
 
 ```text
-36. Authentication
-37. JWT
-38. Interceptors
-39. State Management
-40. Signal Store Pattern
-41. Advanced RxJS
-42. Performance
-43. Change Detection
-44. OnPush
-45. Dynamic Components
-46. SSR
-47. SSG
-48. Hydration
-49. Security
-50. Testing
-51. Architecture
-52. Deployment
+25. State Management
+26. Interceptors
+27. Authentication
+28. JWT
+29. Advanced Routing
+30. Feature Architecture
+31. Deferrable Views
+32. SSR
+33. SSG
+34. Hydration
+35. Performance
+36. Testing
+37. Security
+38. CI/CD
+39. Docker
+40. Production Deployment
 ```
 
 ---
 
-# 🧠 Angular Mental Model
+# Angular Mental Model
 
-The most important concept is understanding how the pieces connect.
+The most important concept is understanding how the pieces connect:
 
 ```text
-                    Angular
-                       │
-        ┌──────────────┼──────────────┐
-        ↓              ↓              ↓
-    Component        Service        Router
-        │              │              │
-        ↓              ↓              ↓
-    Template         HTTP/API       Pages
-        │              │
-        ↓              ↓
-     Signals         RxJS
-        │              │
-        └───────┬──────┘
-                ↓
-             State
-                │
-                ↓
-             UI Update
+                    ANGULAR APPLICATION
+                           │
+                           ▼
+                     Components
+                           │
+             ┌─────────────┼─────────────┐
+             ▼             ▼             ▼
+          Template       Signal       Events
+             │             │             │
+             └─────────────┼─────────────┘
+                           ▼
+                       Services
+                           │
+                           ▼
+                     HttpClient
+                           │
+                           ▼
+                          API
+                           │
+                           ▼
+                       Database
 ```
 
----
-
-# 🔥 Real Angular Application Flow
-
-For example, when a user opens:
+For routing:
 
 ```text
-/dashboard
-```
-
-The flow can be:
-
-```text
-Browser
-   ↓
+Browser URL
+     │
+     ▼
 Angular Router
-   ↓
-Auth Guard
-   ↓
-Dashboard Component
-   ↓
-Dashboard Service
-   ↓
-HttpClient
-   ↓
-Interceptor
-   ↓
-Backend API
-   ↓
-JSON Response
-   ↓
-Observable
-   ↓
-Signal / State
-   ↓
-Angular Template
-   ↓
-User sees dashboard
-```
-
----
-
-# 🇰🇭 Explanation in Khmer
-
-Angular Application មួយធម្មតាដំណើរការប្រហែលជា៖
-
-```text
-User
- ↓
-Router
- ↓
-Guard
- ↓
+     │
+     ▼
+Route
+     │
+     ▼
 Component
- ↓
-Service
- ↓
-HttpClient
- ↓
-Backend API
- ↓
-Response
- ↓
-Signal / RxJS
- ↓
+     │
+     ▼
 Template
- ↓
-UI
 ```
 
-ឧទាហរណ៍ User ចូល៖
-
-```text
-/dashboard
-```
-
-Angular Router ពិនិត្យថា route នោះត្រូវបង្ហាញ Component មួយណា។
-
-បន្ទាប់មក Guard ពិនិត្យ៖
-
-```text
-User Login ហើយឬនៅ?
-```
-
-បើ login ហើយ៖
-
-```text
-DashboardComponent
-```
-
-ត្រូវបានបង្ហាញ។
-
-Component អាចប្រើ Service ដើម្បី request API៖
-
-```typescript
-this.dashboardService.getData();
-```
-
-Service ប្រើ HttpClient៖
-
-```typescript
-this.http.get('/api/dashboard');
-```
-
-Backend បញ្ជូន JSON ត្រឡប់មកវិញ៖
-
-```json
-{
-  "sales": 5000,
-  "orders": 120,
-  "customers": 80
-}
-```
-
-Angular បង្ហាញ data ទៅ UI។
-
----
-
-# 🎯 What You Should Build
-
-To become good at Angular, don't only read documentation.
-
-Build projects.
-
-## Project 1 — Beginner
-
-### Todo App
-
-Features:
-
-```text
-Add Todo
-Delete Todo
-Complete Todo
-Filter Todo
-```
-
-Concepts:
-
-```text
-Component
-Signal
-Event Binding
-@if
-@for
-```
-
----
-
-## Project 2 — Intermediate
-
-### User Management
-
-Features:
+For authentication:
 
 ```text
 Login
-Users
-Create User
-Edit User
-Delete User
-Search
-Pagination
-```
-
-Concepts:
-
-```text
-Routing
-Forms
-Services
-HTTP
-CRUD
-Signals
-RxJS
-Guards
-```
-
----
-
-## Project 3 — Advanced
-
-### E-Commerce
-
-Features:
-
-```text
-Authentication
-Products
-Categories
-Cart
-Orders
-Customers
-Payments
-Dashboard
-Reports
-```
-
-Concepts:
-
-```text
-Authentication
-JWT
+  │
+  ▼
+Auth Service
+  │
+  ▼
+Backend
+  │
+  ▼
+Access Token
+  │
+  ▼
 Interceptor
-Guards
-Lazy Loading
-State Management
-Signals
-RxJS
-HTTP
-Forms
-Performance
-Testing
+  │
+  ▼
+Protected API
+```
+
+For application state:
+
+```text
+User Action
+    │
+    ▼
+Signal
+    │
+    ▼
+Computed State
+    │
+    ▼
+Component
+    │
+    ▼
+UI
 ```
 
 ---
 
-# 📌 Important Angular Commands
+# Useful Angular CLI Commands
 
-Create application:
+Create project:
 
 ```bash
 ng new my-app
 ```
 
-Start:
+Start server:
 
 ```bash
 ng serve
@@ -3602,237 +3165,207 @@ ng test
 Generate component:
 
 ```bash
-ng g c components/user
+ng generate component users
+```
+
+Short:
+
+```bash
+ng g c users
 ```
 
 Generate service:
 
 ```bash
-ng g s services/user
-```
-
-Generate guard:
-
-```bash
-ng g guard guards/auth
-```
-
-Generate pipe:
-
-```bash
-ng g pipe pipes/currency
+ng generate service services/user
 ```
 
 Generate directive:
 
 ```bash
-ng g directive directives/highlight
+ng generate directive directives/highlight
 ```
 
-Generate interface:
+Generate pipe:
 
 ```bash
-ng g interface models/user
+ng generate pipe pipes/truncate
 ```
 
-Generate class:
+Generate guard:
 
 ```bash
-ng g class models/product
+ng generate guard guards/auth
+```
+
+Add package/library:
+
+```bash
+ng add <package>
+```
+
+Update Angular:
+
+```bash
+ng update
+```
+
+Show version:
+
+```bash
+ng version
 ```
 
 ---
 
-# 📖 Important Concepts to Memorize
-
-If you want to become an Angular developer, understand these deeply:
+# Recommended Learning Order
 
 ```text
 TypeScript
-   ↓
+    ↓
+Angular CLI
+    ↓
 Components
-   ↓
+    ↓
 Templates
-   ↓
+    ↓
+Bindings
+    ↓
+Control Flow
+    ↓
 Signals
-   ↓
+    ↓
 Services
-   ↓
+    ↓
 Dependency Injection
-   ↓
+    ↓
 Routing
-   ↓
+    ↓
 Forms
-   ↓
-HTTP
-   ↓
+    ↓
+HttpClient
+    ↓
 RxJS
-   ↓
+    ↓
 Authentication
-   ↓
+    ↓
+Guards + Interceptors
+    ↓
 State Management
-   ↓
-Performance
-   ↓
+    ↓
+Lazy Loading
+    ↓
 Testing
-   ↓
-Architecture
+    ↓
+Performance
+    ↓
+SSR / SSG
+    ↓
+Production
 ```
 
 ---
 
-# ✅ Final Checklist
+# Final Angular Checklist
 
-## Beginner
+Before calling yourself comfortable with Angular, you should be able to build:
 
-* [ ] HTML
-* [ ] CSS
-* [ ] JavaScript
-* [ ] TypeScript
-* [ ] Angular CLI
-* [ ] Components
-* [ ] Templates
-* [ ] Interpolation
-* [ ] Property Binding
-* [ ] Event Binding
-* [ ] Two-Way Binding
-* [ ] Control Flow
-* [ ] Pipes
-* [ ] Directives
-
-## Intermediate
-
-* [ ] Services
-* [ ] Dependency Injection
-* [ ] Signals
-* [ ] Computed
-* [ ] Effects
-* [ ] Input
-* [ ] Output
-* [ ] Routing
-* [ ] Guards
-* [ ] Lazy Loading
-* [ ] Forms
-* [ ] Validation
-* [ ] HTTP Client
+* [ ] Login page
+* [ ] Register page
+* [ ] Dashboard
+* [ ] Sidebar
+* [ ] Navbar
 * [ ] CRUD
-* [ ] RxJS
-* [ ] Error Handling
-
-## Advanced
-
+* [ ] Search
+* [ ] Pagination
+* [ ] Sorting
+* [ ] Filtering
+* [ ] Reactive forms
+* [ ] Validation
+* [ ] API integration
 * [ ] Authentication
 * [ ] JWT
-* [ ] Interceptors
-* [ ] State Management
-* [ ] Advanced RxJS
-* [ ] Change Detection
-* [ ] OnPush
-* [ ] Dynamic Components
-* [ ] SSR
-* [ ] SSG
-* [ ] Hydration
-* [ ] Security
-* [ ] Testing
-* [ ] Performance
-* [ ] Architecture
+* [ ] Route guards
+* [ ] HTTP interceptor
+* [ ] Error handling
+* [ ] Loading states
+* [ ] Signals
+* [ ] RxJS
+* [ ] Lazy loading
+* [ ] Unit tests
+* [ ] HTTP tests
+* [ ] Production build
 * [ ] Deployment
+* [ ] SSR/SSG where appropriate
 
 ---
 
-# 🚀 Final Goal
-
-After completing this roadmap, you should be able to build applications such as:
-
-```text
-                    Angular
-                       │
-       ┌───────────────┼────────────────┐
-       ↓               ↓                ↓
-      POS           E-Commerce       Dashboard
-       │               │                │
-       ├─ Products     ├─ Products      ├─ Charts
-       ├─ Orders       ├─ Cart          ├─ Reports
-       ├─ Tables       ├─ Orders        ├─ Users
-       ├─ Customers    ├─ Payment       └─ Analytics
-       └─ Reports      └─ Users
-```
-
-The goal is not only to memorize Angular syntax.
-
-The goal is to understand:
-
-```text
-How components work
-How data flows
-How state changes
-How APIs communicate
-How authentication works
-How routing works
-How applications are structured
-How to optimize performance
-How to test applications
-How to build production systems
-```
-
----
-
-# 📚 Official Angular Resources
+# Official Angular Resources
 
 * Angular Documentation: https://angular.dev/
-* Angular Installation: https://angular.dev/installation
+* Angular CLI: https://angular.dev/cli
+* Angular Tutorial: https://angular.dev/tutorials
 * Angular Components: https://angular.dev/guide/components
 * Angular Signals: https://angular.dev/guide/signals
 * Angular Routing: https://angular.dev/guide/routing
-* Angular HTTP Client: https://angular.dev/guide/http
-* Angular CLI: https://angular.dev/tools/cli
+* Angular Forms: https://angular.dev/guide/forms
+* Angular HTTP: https://angular.dev/guide/http
+* Angular Testing: https://angular.dev/guide/testing
 
 ---
 
-# ⭐ Conclusion
+# Conclusion
 
-Angular is much larger than simply writing components.
+Angular is more than a UI library. It is a complete web application framework.
 
-A professional Angular developer should understand:
+The most important concepts to master are:
 
 ```text
-TypeScript
-+
-Angular Components
-+
+Components
+     +
+Templates
+     +
 Signals
-+
+     +
 Services
-+
+     +
 Dependency Injection
-+
+     +
 Routing
-+
+     +
 Forms
-+
-HTTP
-+
+     +
+HttpClient
+     +
 RxJS
-+
+     +
 Authentication
-+
-State Management
-+
+     +
 Testing
-+
-Security
-+
+     +
 Performance
-+
-Architecture
+     +
+SSR
 ```
 
-Learn each topic individually, then combine them into real projects.
+Start small.
 
-**Beginner → Build small apps**
+Build projects.
 
-**Intermediate → Build CRUD applications**
+Do not try to memorize every Angular API.
 
-**Advanced → Build complete production applications**
+Instead, understand how the pieces work together:
 
-**Professional → Focus on architecture, performance, security, testing, and maintainability.**
+```text
+Component
+   ↓
+State
+   ↓
+Service
+   ↓
+API
+   ↓
+Database
+```
+
+Once you understand this architecture, you can build small Angular applications and gradually scale them into large production systems.
